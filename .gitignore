@@ -1,3 +1,9 @@
+# Build artifacts
+build/
+
+# The actual factorio mod folder
+factorio_mods/
+
 # Compiled Lua sources
 luac.out
 
