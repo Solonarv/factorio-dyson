@@ -2,7 +2,7 @@
 build/
 
 # The actual factorio mod folder
-factorio_mods/
+factorio_mods
 
 # Compiled Lua sources
 luac.out
