@@ -28,7 +28,8 @@ data:extend{
         flags = {"goes-to-quickbar"},
         subgroup = "energy",
         order = "j[dyson-energy]-a[receiver]",
-        stack_size = 10
+        stack_size = 10,
+        place_result = "microwave-power-receiver"
     },
     {
         type = "item",
