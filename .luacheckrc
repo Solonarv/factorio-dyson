@@ -1,2 +1,2 @@
 exclude_files = {"stdlib"}
-globals = {"data"}
+globals = {"data", "game", "script", "remote", "commands", "settings", "rcon", "defines"}
