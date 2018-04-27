@@ -5,7 +5,7 @@ data:extend{
         icon = "__base__/graphics/icons/accumulator.png",
         icon_size = 32,
         flags = {"placeable-neutral", "player-creation"},
-        minable = {hardness = 0.2, mining_time = 0.5, result = "electric-energy-interface"},
+        minable = {hardness = 0.2, mining_time = 0.5, result = "microwave-power-receiver"},
         max_health = 150,
         corpse = "medium-remnants",
         collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
@@ -16,12 +16,12 @@ data:extend{
         {
         type = "electric",
         buffer_capacity = "10GJ",
-        usage_priority = "terciary",
+        usage_priority = "secondary-output",
         input_flow_limit = "0kW",
         output_flow_limit = "500GW"
         },
 
-        energy_production = "500GW",
+        energy_production = "0kW",
         energy_usage = "0kW",
         -- also 'pictures' for 4-way sprite is available, or 'animation' resp. 'animations'
         picture =

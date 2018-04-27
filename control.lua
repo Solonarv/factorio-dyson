@@ -1,4 +1,6 @@
-local dyson_swarm = require "dyson_swarm"
+local DysonSwarm = require "dyson_swarm"
+
+require "scripts.receiver"
 
 local function disable_no_satellite_launch_message()
     if remote.interfaces["silo-script"] then
@@ -22,7 +24,7 @@ script.on_event(defines.events.on_rocket_launched, function(event)
     if not force then return end
     for _, item in pairs(get_tracked_items()) do
         if rocket.get_item_count(item) > 0 then
-            dyson_swarm.add_launched_item(force, item, rocket.get_item_count(item))
+            DysonSwarm.add_launched_item(force, item, rocket.get_item_count(item))
         end
     end
 end)

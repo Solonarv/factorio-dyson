@@ -65,6 +65,7 @@ ignore = IGNORE
 exclude_files = {
     --Ignore special folders
     '**/.*/*', --Ignore if path starts with .
+    '**/stdlib/', --Ignore stdlib
     '**/mod/stdlib/', --Ignore from symlinked
 
     --Ignore development mods
